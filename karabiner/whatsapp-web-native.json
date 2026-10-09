@@ -26,8 +26,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -56,8 +56,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -84,8 +84,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -114,8 +114,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -144,8 +144,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -174,8 +174,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -203,8 +203,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -233,8 +233,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -262,8 +262,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -290,8 +290,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -318,8 +318,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -347,8 +347,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -376,8 +376,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -404,8 +404,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -433,8 +433,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -461,8 +461,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -489,8 +489,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -517,8 +517,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -545,8 +545,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -573,8 +573,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -601,8 +601,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -629,8 +629,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -657,8 +657,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
@@ -685,8 +685,8 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome\\.app\\.hnpfjngllnobngcgfapefoaidbinmjnm$"
+              "file_paths": [
+                "/WhatsApp Web\\.app/Contents/MacOS/"
               ]
             }
           ]
