@@ -1,13 +1,14 @@
 {
   "manifest_version": 3,
   "name": "WhatsApp Web Native",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Makes WhatsApp Web look and behave more like the WhatsApp Mac app.",
+  "icons": { "128": "icons/icon128.png" },
   "content_scripts": [
     {
       "matches": ["https://web.whatsapp.com/*"],
-      "css": ["styles/native.css", "styles/bidi.css", "styles/nags.css"],
-      "js": ["content.js"],
+      "css": ["styles/native.css", "styles/bidi.css", "styles/nags.css", "styles/indicator.css"],
+      "js": ["selectors.js", "indicator.js", "health.js", "content.js"],
       "run_at": "document_idle"
     }
   ]
