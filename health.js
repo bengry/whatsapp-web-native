@@ -70,6 +70,8 @@ async function runHealthChecks() {
     return;
   }
   await waitFor(SELECTORS.chatRow, ROWS_TIMEOUT_MS);
+  // The right-hand pane (intro card, or an open chat) renders after the chat list.
+  await waitFor(`${SELECTORS.openChat}, ${SELECTORS.nagCard}`, ROWS_TIMEOUT_MS);
   reportBroken(failedChecks(STARTUP_CHECKS));
 
   await waitFor(SELECTORS.openChat, Infinity);
