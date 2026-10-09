@@ -1,0 +1,6 @@
+/* "Download WhatsApp for Mac" card on the empty (no chat open) screen. */
+[data-testid="intro_panel_v2_title_card"],
+/* "Get the app" links elsewhere. */
+#app a[href*="whatsapp.com/download"] {
+  display: none !important;
+}

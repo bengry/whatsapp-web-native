@@ -1,0 +1,19 @@
+/* System font (SF Pro) everywhere except code blocks. */
+#app :not(code, pre, code *, pre *) {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue",
+    sans-serif, "Apple Color Emoji" !important;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* macOS-style overlay scrollbars: hidden until the pane is hovered. */
+#app * {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+#app *:hover {
+  scrollbar-color: rgba(128, 128, 128, 0.45) transparent;
+}

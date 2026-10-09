@@ -1,0 +1,26 @@
+/*
+ * WhatsApp sets one direction per message from its first strong character.
+ * The Mac app resolves direction per paragraph; `plaintext` does the same,
+ * and `start` aligns each paragraph to its own direction.
+ */
+
+/* Message text. */
+#main .copyable-text,
+#main .copyable-text [dir],
+#main .selectable-text {
+  unicode-bidi: plaintext;
+  text-align: start;
+}
+
+/* Compose box. */
+#main footer [contenteditable="true"],
+#main footer [contenteditable="true"] p {
+  unicode-bidi: plaintext;
+  text-align: start;
+}
+
+/* Chat list names and last-message previews. */
+#pane-side span[title],
+#pane-side span[dir] {
+  unicode-bidi: plaintext;
+}
