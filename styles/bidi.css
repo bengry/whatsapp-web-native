@@ -20,9 +20,15 @@
   float: right;
 }
 
-/* RTL messages: mirror the timestamp to the bottom-left so the last line stays flush right. */
+/*
+ * RTL messages: mirror the timestamp to the bottom-left so the last line stays flush right.
+ * Skip quoted text, so an LTR reply to an RTL message keeps its timestamp on the right.
+ */
 #main div:has(> span[data-testid="selectable-text"]:dir(rtl)) > span:not([data-testid]),
-#main div:has(> div > [data-testid="msg-meta"]):has(span[data-testid="selectable-text"]:dir(rtl))
+#main
+  div:has(> div > [data-testid="msg-meta"]):has(
+    span[data-testid="selectable-text"]:dir(rtl):not([data-testid="quoted-message"] *)
+  )
   > div:has(> [data-testid="msg-meta"]) {
   float: left;
 }
