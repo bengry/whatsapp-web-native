@@ -1,8 +1,8 @@
 {
-  "title": "WhatsApp Web Native",
+  "title": "Mac Mode for WhatsApp Web",
   "rules": [
     {
-      "description": "WhatsApp Web Native",
+      "description": "Mac Mode for WhatsApp Web",
       "manipulators": [
         {
           "type": "basic",

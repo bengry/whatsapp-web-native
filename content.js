@@ -1,6 +1,6 @@
 // Shortcuts that WhatsApp Web has no built-in key for.
 // Karabiner turns the native keys (Cmd+1…9, Cmd+Shift+[ / ]) into Ctrl+Option+<key>,
-// so Chrome never claims them. See karabiner/whatsapp-web-native.json.
+// so Chrome never claims them. See karabiner/mac-mode-for-whatsapp-web.json.
 //
 // Fail open: a key is consumed only when its action ran. If WhatsApp's page changes
 // and no chat rows match, the key passes through untouched and the breakage is reported.
