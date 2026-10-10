@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="mock.css" />
+    <style>
+      .panels {
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        top: 150px;
+        bottom: 40px;
+        display: flex;
+        gap: 28px;
+      }
+
+      .panel {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.08);
+      }
+
+      .panel .label {
+        height: 44px;
+        flex: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background: #202222;
+        font-size: 15px;
+        font-weight: 600;
+        color: #c7c9c9;
+      }
+
+      .panel.after .label {
+        color: #d9fdd3;
+        background: #103529;
+      }
+
+      .panel .chat {
+        flex: 1;
+      }
+
+      .panel .messages {
+        padding: 16px 28px;
+      }
+
+      .panel .msg {
+        max-width: 78%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="caption">
+      <h1>Right-to-left that reads right</h1>
+      <p>Hebrew and Arabic messages align right, and the timestamp moves out of the way.</p>
+    </div>
+    <div class="panels">
+      <div class="panel before">
+        <div class="label">WhatsApp Web</div>
+        <div class="chat" id="before"></div>
+      </div>
+      <div class="panel after">
+        <div class="label">With Mac Mode</div>
+        <div class="chat" id="after"></div>
+      </div>
+    </div>
+    <script src="mock.js"></script>
+    <script>
+      renderChat(document.getElementById("before"), { mode: "before" });
+      renderChat(document.getElementById("after"), { mode: "after" });
+    </script>
+  </body>
+</html>

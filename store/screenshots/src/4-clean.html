@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="mock.css" />
+    <style>
+      .panels {
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        top: 150px;
+        bottom: 40px;
+        display: flex;
+        gap: 28px;
+      }
+
+      .panel {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        overflow: hidden;
+        background: var(--chat);
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.08);
+      }
+
+      .panel .label {
+        height: 44px;
+        flex: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #202222;
+        font-size: 15px;
+        font-weight: 600;
+        color: #c7c9c9;
+      }
+
+      .panel.after .label {
+        color: #d9fdd3;
+        background: #103529;
+      }
+
+      .empty {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        color: var(--muted);
+        font-size: 15px;
+      }
+
+      .nag {
+        width: 360px;
+        padding: 26px 24px;
+        border-radius: 18px;
+        background: #1d1f1f;
+        text-align: center;
+      }
+
+      .nag h3 {
+        color: var(--text);
+        font-size: 22px;
+        margin: 14px 0 8px;
+      }
+
+      .nag .art {
+        width: 120px;
+        height: 72px;
+        margin: 0 auto;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #d9fdd3, #6fd38f);
+      }
+
+      .nag button {
+        margin-top: 16px;
+        padding: 9px 20px;
+        border: 0;
+        border-radius: 20px;
+        background: #103529;
+        color: #d9fdd3;
+        font: 600 15px -apple-system, sans-serif;
+      }
+
+      .strip {
+        height: 58px;
+        flex: none;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 0 18px;
+        background: #1d1f1f;
+        border-top: 1px solid #2a2c2c;
+        font-size: 14px;
+      }
+
+      .strip i {
+        width: 28px;
+        height: 28px;
+        border-radius: 6px;
+        background: var(--green);
+      }
+
+      .strip small {
+        display: block;
+        color: var(--muted);
+      }
+
+      .actions {
+        display: flex;
+        gap: 22px;
+      }
+
+      .actions span {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: #242626;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="caption">
+      <h1>No "get the app" nags</h1>
+      <p>The download banners are gone. You already have it the way you want it.</p>
+    </div>
+    <div class="panels">
+      <div class="panel before">
+        <div class="label">WhatsApp Web</div>
+        <div class="empty">
+          <div class="nag">
+            <div class="art"></div>
+            <h3>Download the desktop app</h3>
+            <div>Make calls and get a faster experience.</div>
+            <button>Get the app</button>
+          </div>
+          <div class="actions"><span></span><span></span><span></span></div>
+        </div>
+        <div class="strip"><i></i><div>See more chat history on the app<small>Get the desktop app</small></div></div>
+      </div>
+      <div class="panel after">
+        <div class="label">With Mac Mode</div>
+        <div class="empty">
+          <div class="actions"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

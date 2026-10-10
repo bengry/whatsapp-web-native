@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="mock.css" />
+    <style>
+      /* Same spot as the real dot: the window's bottom-left corner, in the icon rail. */
+      .dot {
+        position: absolute;
+        left: 70px;
+        bottom: 10px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ff9f0a;
+        box-shadow: 0 0 0 6px rgba(255, 159, 10, 0.25);
+      }
+
+      .tip {
+        position: absolute;
+        left: 94px;
+        bottom: 4px;
+        max-width: 470px;
+        padding: 10px 14px;
+        border-radius: 10px;
+        background: rgba(245, 245, 245, 0.97);
+        color: #1d1f1f;
+        font-size: 13px;
+        line-height: 18px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="caption">
+      <h1>Breaks safely</h1>
+      <p>If WhatsApp changes its page, WhatsApp keeps working and a small dot tells you what to fix.</p>
+    </div>
+    <div class="window" id="window"></div>
+    <div class="dot"></div>
+    <div class="tip">Mac Mode for WhatsApp Web: WhatsApp changed its page. Not working: chat rows. WhatsApp itself still works.</div>
+    <script src="mock.js"></script>
+    <script>
+      const { chat } = renderWindow(document.getElementById("window"));
+      renderChat(chat);
+    </script>
+  </body>
+</html>

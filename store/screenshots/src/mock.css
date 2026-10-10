@@ -1,0 +1,376 @@
+/* Shared styles for the store screenshot mock-ups. All chat content is invented. */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --rail: #1d1f1f;
+  --side: #161717;
+  --side-line: #2a2c2c;
+  --chat: #0b141a;
+  --in: #242626;
+  --out: #144d37;
+  --text: #e9edef;
+  --muted: #8696a0;
+  --green: #21c063;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  width: 1280px;
+  height: 800px;
+  overflow: hidden;
+  color: var(--text);
+  background: radial-gradient(1200px 600px at 20% 0%, #1f6f4a 0%, #0e2a20 55%, #08140f 100%);
+}
+
+/* Marketing caption above the window. */
+.caption {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.caption h1 {
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.caption p {
+  font-size: 18px;
+  color: #b9d8c8;
+}
+
+/* macOS app window. */
+.window {
+  position: absolute;
+  left: 60px;
+  right: 60px;
+  top: 130px;
+  bottom: -20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+  background: var(--side);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.titlebar {
+  height: 36px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 14px;
+  background: #202222;
+  font-size: 13px;
+  color: #c7c9c9;
+}
+
+.titlebar i {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff5f57;
+}
+
+.titlebar i:nth-child(2) {
+  background: #febc2e;
+}
+
+.titlebar i:nth-child(3) {
+  background: #28c840;
+}
+
+.titlebar span {
+  margin-left: 10px;
+}
+
+.app {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+/* Left icon rail. */
+.rail {
+  width: 60px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding-top: 16px;
+  background: var(--rail);
+  border-right: 1px solid var(--side-line);
+}
+
+.rail b {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: #3b3e3e;
+}
+
+.rail b:first-child {
+  background: #2f3a35;
+  box-shadow: 0 0 0 7px #2f3a35;
+}
+
+/* Chat list. */
+.side {
+  width: 340px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  background: var(--side);
+  border-right: 1px solid var(--side-line);
+}
+
+.side h2 {
+  padding: 18px 18px 12px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.search {
+  margin: 0 14px 10px;
+  height: 36px;
+  border-radius: 18px;
+  background: #2a2c2c;
+  color: var(--muted);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  padding: 0 14px 10px;
+}
+
+.chips span {
+  padding: 5px 12px;
+  border-radius: 14px;
+  border: 1px solid #3b3e3e;
+  font-size: 13px;
+  color: #c7c9c9;
+}
+
+.chips span:first-child {
+  background: #103529;
+  border-color: #103529;
+  color: #d9fdd3;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.row.active {
+  background: #2a2c2c;
+  border-radius: 10px;
+  margin: 0 6px;
+  padding: 10px 8px;
+}
+
+.avatar {
+  width: 46px;
+  height: 46px;
+  flex: none;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 17px;
+  color: #fff;
+}
+
+.row .body {
+  flex: 1;
+  min-width: 0;
+}
+
+.row .top,
+.row .bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.row .name {
+  font-size: 16px;
+}
+
+.row .time {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.row .preview {
+  font-size: 14px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  unicode-bidi: plaintext;
+}
+
+.badge {
+  min-width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: var(--green);
+  color: #0b141a;
+  font-size: 12px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  padding: 0 6px;
+}
+
+.row .time.unread {
+  color: var(--green);
+}
+
+/* Open chat. */
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--chat);
+  min-width: 0;
+}
+
+.chat header {
+  height: 60px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  background: var(--side);
+}
+
+.chat header .avatar {
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.chat header small {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6px;
+  padding: 16px 48px;
+}
+
+.day {
+  align-self: center;
+  margin: 6px 0;
+  padding: 4px 12px;
+  border-radius: 8px;
+  background: #1d2a30;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* Bubbles. .rtl mirrors like the extension does; .before shows WhatsApp's default. */
+.msg {
+  max-width: 62%;
+  padding: 6px 9px 8px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 20px;
+  background: var(--in);
+  align-self: flex-start;
+  white-space: pre-line;
+}
+
+.msg.out {
+  background: var(--out);
+  align-self: flex-end;
+}
+
+.msg .t {
+  float: right;
+  margin: 6px 0 -6px 12px;
+  font-size: 11px;
+  color: #a5b2ba;
+}
+
+.msg.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.msg.rtl .t {
+  float: left;
+  margin: 6px 12px -6px 0;
+}
+
+.msg.before {
+  direction: ltr;
+  text-align: left;
+}
+
+.msg.before .t {
+  float: right;
+  margin: 6px 0 -6px 12px;
+}
+
+.compose {
+  height: 62px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.compose div {
+  flex: 1;
+  height: 42px;
+  border-radius: 21px;
+  background: #242626;
+  color: var(--muted);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+}
+
+/* Keyboard keycaps. */
+kbd {
+  display: inline-grid;
+  place-items: center;
+  min-width: 30px;
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 7px;
+  background: linear-gradient(#f4f4f4, #dcdcdc);
+  color: #1d1f1f;
+  font: 600 15px -apple-system, sans-serif;
+  box-shadow: 0 2px 0 #9a9a9a, 0 3px 6px rgba(0, 0, 0, 0.35);
+}

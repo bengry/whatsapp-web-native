@@ -15,7 +15,7 @@ function createIndicator() {
 
 function renderIndicator() {
   indicator ??= createIndicator();
-  const text = `WhatsApp Web Native: WhatsApp changed its page. Not working: ${[...brokenChecks].sort().join(", ")}. WhatsApp itself still works.`;
+  const text = `Mac Mode for WhatsApp Web: WhatsApp changed its page. Not working: ${[...brokenChecks].sort().join(", ")}. WhatsApp itself still works.`;
   indicator.title = text;
   indicator.setAttribute("aria-label", text);
 }

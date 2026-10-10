@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="mock.css" />
+  </head>
+  <body>
+    <div class="caption">
+      <h1>WhatsApp Web, the Mac way</h1>
+      <p>SF Pro, Mac app shortcuts, and Hebrew that reads right-to-left.</p>
+    </div>
+    <div class="window" id="window"></div>
+    <script src="mock.js"></script>
+    <script>
+      const { chat } = renderWindow(document.getElementById("window"));
+      renderChat(chat);
+    </script>
+  </body>
+</html>
