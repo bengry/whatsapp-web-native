@@ -65,4 +65,4 @@ The extension's only purpose is to change WhatsApp Web, so its styles and keyboa
 - I do not use or transfer user data for purposes that are unrelated to my item's single purpose.
 - I do not use or transfer user data to determine creditworthiness or for lending purposes.
 
-**Privacy policy URL:** Optional when no data is collected. If the dashboard asks, use a page that says: "Mac Mode for WhatsApp Web collects, stores and transmits no data."
+**Privacy policy URL:** https://github.com/bengry/whatsapp-web-native/blob/main/PRIVACY.md (must be public first)
