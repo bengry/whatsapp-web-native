@@ -9,6 +9,7 @@ const SELECTORS = Object.freeze({
   openChat: "#main",
   composeBox: '#main footer [contenteditable="true"]',
   messageText: "#main .copyable-text",
+  messageBody: 'span[data-testid="selectable-text"]',
   nagCard: '[data-testid="intro_panel_v2_title_card"]',
   loginScreen: "[data-ref], canvas[aria-label]",
 });

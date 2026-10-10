@@ -13,21 +13,19 @@
 }
 
 /*
- * The hidden spacer after the text reserves room for the timestamp. As an inline item
- * it lands at the line's end, which is the left in RTL; float it to the timestamp's side.
+ * Messages whose last line is RTL (marked by bidi.js): mirror the timestamp to the
+ * bottom-left so the last line stays flush right. The hidden inline spacer after the text
+ * already lands at the last line's end, the timestamp's side, and wraps to a new line when
+ * the line is full; floating it would stop the bubble from growing. Skip quoted text, so
+ * an LTR reply to an RTL message keeps its timestamp on the right, and spans nested in a
+ * message (list items carry their own), which say nothing about its last line.
  */
-#main div:has(> span[data-testid="selectable-text"]) > span:not([data-testid]) {
-  float: right;
-}
-
-/*
- * RTL messages: mirror the timestamp to the bottom-left so the last line stays flush right.
- * Skip quoted text, so an LTR reply to an RTL message keeps its timestamp on the right.
- */
-#main div:has(> span[data-testid="selectable-text"]:dir(rtl)) > span:not([data-testid]),
 #main
   div:has(> div > [data-testid="msg-meta"]):has(
-    span[data-testid="selectable-text"]:dir(rtl):not([data-testid="quoted-message"] *)
+    span[data-testid="selectable-text"][data-wwn-last-dir="rtl"]:not(
+        [data-testid="quoted-message"] *,
+        span[data-testid="selectable-text"] *
+      )
   )
   > div:has(> [data-testid="msg-meta"]) {
   float: left;

@@ -30,6 +30,14 @@ const STARTUP_CHECKS = [
 const CHAT_CHECKS = [
   { name: "compose box", test: () => document.querySelector(SELECTORS.composeBox) !== null },
   { name: "message text", test: () => document.querySelector(SELECTORS.messageText) !== null },
+  {
+    // Media-only chats have no text bubbles, and the chat may close before this runs.
+    name: "message body",
+    test: () => {
+      const main = document.querySelector(SELECTORS.openChat);
+      return !main?.querySelector(SELECTORS.messageText) || main.querySelector(SELECTORS.messageBody) !== null;
+    },
+  },
 ];
 
 function waitFor(selector, timeoutMs) {
