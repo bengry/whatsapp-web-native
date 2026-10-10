@@ -1,5 +1,7 @@
 /* "Download WhatsApp for Mac" card on the empty (no chat open) screen. */
 [data-testid="intro_panel_v2_title_card"],
+/* "See more chat history on the app" strip below the chat list. */
+#side > div[role="button"]:has([data-testid="wa-square-icon"]),
 /* "Get the app" links elsewhere. */
 #app a[href*="whatsapp.com/download"] {
   display: none !important;
