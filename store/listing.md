@@ -26,7 +26,7 @@ WHAT IT DOES
 • Breaks safely: if WhatsApp changes its page, WhatsApp keeps working, and a small orange dot in the corner tells you which part stopped working.
 
 ABOUT THE SHORTCUTS
-Chrome keeps some keys for itself, such as ⌘N and ⌘1–9. To get them, install WhatsApp Web as an app (Chrome menu → Cast, save, and share → Install page as app) and add the free Karabiner-Elements rule from the project page. The look, right-to-left fixes and nag removal work without it.
+Chrome keeps some keys for itself, such as ⌘N and ⌘1–9. To get them, install WhatsApp Web as an app (Chrome menu → Cast, save, and share → Install page as app) and add the free Karabiner-Elements rule from https://github.com/bengry/whatsapp-web-native (look in the karabiner folder). The look, right-to-left fixes and nag removal work without it.
 
 PRIVACY
 The extension runs only on web.whatsapp.com. It collects no data, sends nothing anywhere, has no extra permissions, and loads no remote code. It only adds styles and keyboard handling to the page.
